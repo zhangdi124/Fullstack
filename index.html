@@ -1,0 +1,409 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Full Stack Day</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/custom.css">
+
+    <!-- JavaScript -->
+    <script src="js/main.js"></script>
+
+    <!-- googleAPI -->
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+
+    <script defer src="https://use.fontawesome.com/releases/v5.0.9/js/all.js" integrity="sha384-8iPTk2s/jMVj81dnzb/iFR2sdA7u06vHJyyLlAd4snFpCl/SnyUjRrbdJsw1pGIl" crossorigin="anonymous"></script>
+  
+  </head>
+  <body id="home" data-spy="scroll" data-target=".navbar" data-offset="100">
+    <!-- navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+      <div class="container">
+        <a class="navbar-brand order-1 mr-0" href="https://developer.mozilla.org/en-US/docs/Web/JavaScript" target="_blank">Presented by Fullstack</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+          <div class="navbar-nav">
+            <a class="nav-item nav-link" href="#home">Home <span class="sr-only">(current)</span></a>
+            <a class="nav-item nav-link" href="#about">About</a>
+            <a class="nav-item nav-link" href="#speakers">Speakers</a>
+            <a class="nav-item nav-link" href="#schedule">Schedule</a>
+          </div>
+        </div>
+      </div>
+    </nav><!-- /navbar -->
+
+    <!-- jumbotron -->
+    <div class="jumbotron jumbotron-fluid bg-info text-white">
+      <div class="container text-sm-center pt-5">
+        <h1 class="display-2">Full Stack Day</h1>
+        <p class="lead">The Full Stack Day is the world's largest gathering of Full Stack Techologists!</p>
+        <div class="btn-group mt-4" role="group" aria-label="Callout buttons">
+          <button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#register">Register</button>
+          <a class="btn btn-light btn-lg" href="#speakers">Speakers</a>
+          <a class="btn btn-primary btn-lg" href="#schedule">Schedule</a>
+        </div>
+      </div>
+    </div><!-- /jumbotron -->
+
+    <div class="container pt-4">
+      <!-- about -->
+      <div id="about" class="row">
+        <div class="col-lg order-lg-2">
+          <h3 class="mb-4">About Full Stack Day</h3>
+          <img class="mb-4 img-fluid rounded d-none d-sm-block" src="https://images.unsplash.com/photo-1488588341386-ac79c612da62?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=684347437ec0ed3cb89655e44357acb4&auto=format&fit=crop&w=755&q=80" alt="NYC">
+		      <p>Full Stack Day'18 will be held on September 26, 2018 in New York, NY</p>
+        </div>
+        <div class="col-lg order-lg-1">
+		      <h3 class="mb-4">Expert Speakers</h3>
+  	      <p>Our expert speaker lineup was just announced, so don't wait too long before grabbing your tickets!</p>
+		      <p>Want to meet the international JavaScript community and share skills with some of the world's top experts, hackers, and makers? Be the first to know what to expect for the future of JavaScript.</p>
+		      <p>Full Stack Conf is committed to being inclusive and welcoming for everyone. We look forward to another intensive day of learning and sharing.</p>
+        </div>
+        <div class="col-lg order-3">
+          <h3 class="mb-4">What You'll Learn</h3>
+					<div class="list-group">
+					  <a href="#" class="list-group-item list-group-item-action"><strong>MongoDB</strong>: NoSQL database</a>
+					  <a href="#" class="list-group-item list-group-item-action"><strong>Express</strong>: Framework for Node</a>
+            <a href="#" class="list-group-item list-group-item-action"><strong>React</strong>: JavaScript library</a>
+					  <a href="#" class="list-group-item list-group-item-action"><strong>Node.js</strong>: JavaScript environment</a>
+					  <a href="#" class="list-group-item list-group-item-action"><strong>ES2015</strong>: Latest version of JavaScript</a>
+					  <a href="#" class="list-group-item list-group-item-action"><strong>Babel</strong>: JavaScript compiler</a>
+					</div>
+        </div>
+      </div><!-- /about -->
+
+      <!-- speakers -->
+      <h1 id="speakers" class="display-4 text-center my-5 text-muted">Speakers</h1>
+			<div class="row">
+				<div class="col-md-6 col-lg-4">
+          <div class="card mb-3">
+            <img class="card-img-top" src="img/vivianne.png" alt="Vivianne">
+            <div class="card-body">
+              <h4 class="card-title">Vivianne McVue</h4>
+              <p class="card-text">Vivianne is a web developer and teacher who is passionate about building scalable, data-driven web apps, especially ones that address old problems with new tech!</p>
+            </div>
+          </div>
+				</div>
+
+				<div class="col-md-6 col-lg-4">
+          <div class="card mb-3">
+            <img class="card-img-top" src="img/nodestradamus.png" alt="NodeStradamus">
+            <div class="card-body">
+              <h4 class="card-title">NodeStradamus</h4>
+              <p class="card-text">"NodeStra" is a software engineer and philosopher trying to leave the world better than he found it. He codes for non-profits, eCommerce, and large-scale web apps.</p>
+            </div>
+          </div>
+				</div>
+
+				<div class="col-md-6 col-lg-4">
+			    <div class="card mb-3">
+			      <img class="card-img-top" src="img/robbie.png" alt="Robbie">
+			      <div class="card-body">
+			        <h4 class="card-title">Robbie Redux</h4>
+			        <p class="card-text">Robbie is a JavaScript developer working on large-scale applications. He's also a teacher who strives to support students in removing barriers to learning code.</p>
+			      </div>
+			    </div>
+				</div>
+
+				<div class="col-md-6 col-lg-4">
+				  <div class="card mb-3">
+			      <img class="card-img-top" src="img/ecma.png" alt="Ecma">
+			      <div class="card-body">
+			        <h4 class="card-title">Ecma Scriptnstuff</h4>
+			        <p class="card-text">Ecma found her passion for programming and teaching over 15 years ago. She is excited to introduce you to all of the wonders of JavaScript.</p>
+			      </div>
+			    </div>
+				</div>
+
+				<div class="col-md-6 col-lg-4">
+			    <div class="card mb-3">
+			      <img class="card-img-top" src="img/jay.png" alt="Jay">
+			      <div class="card-body">
+			        <h4 class="card-title">Jay Query</h4>
+			        <p class="card-text">Jay is a developer, author of CSS: The Missing Manual, JavaScript &amp; jQuery: The Missing Manual, and web development teacher.</p>
+			      </div>
+			    </div>
+				</div>
+
+				<div class="col-md-6 col-lg-4">
+			    <div class="card">
+			      <img class="card-img-top" src="img/json.png" alt="Json">
+			      <div class="card-body">
+			        <h4 class="card-title">Json Babel</h4>
+			        <p class="card-text">All of his professional life, Json has worked with computers online; he is a polyglot programmer and likes using the right tools for the job.</p>
+			      </div>
+			    </div>
+				</div>
+			</div><!-- /speakers -->
+
+      <!-- schedule -->
+      <h1 id="schedule" class="display-4 text-center my-5 text-muted">Schedule</h1>
+
+      <ul class="list-group">
+        <li class="list-group-item">
+          <div class="d-flex justify-content-between">
+            <h5 class="mb-1">Keynote: Internet of Things</h5>
+            <span class="badge badge-pill badge-info p-2" id="badge-color">9:00am</span>
+          </div>
+          <p class="mb-1">NodeStradamus</p>
+        </li>
+        <li class="list-group-item">
+          <div class="d-flex justify-content-between">
+            <h5 class="mb-1">React Basics</h5>
+            <span class="badge badge-pill badge-info p-2" id="badge-color">10:00am</span>
+          </div>
+          <p class="mb-1">Vivianne McVue</p>
+        </li>
+        <li class="list-group-item">
+          <div class="d-flex justify-content-between">
+            <h5 class="mb-1">Hey, Mongo!</h5>
+            <span class="badge badge-pill badge-info p-2" id="badge-color">11:00am</span>
+          </div>
+          <p class="mb-1">Jay Query</p>
+        </li>
+        <li class="list-group-item list-group-item-primary">
+          <div class="d-flex justify-content-between">
+            <h5 class="mb-1">Lunch</h5>
+            <span class="badge badge-pill badge-info p-2" id="badge-color">12:00pm</span>
+          </div>
+          <p class="mb-1">Free pizza for everyone!</p>
+        </li>
+        <li class="list-group-item">
+          <div class="d-flex justify-content-between">
+            <h5 class="mb-1">Introducing ES2015</h5>
+            <span class="badge badge-pill badge-info p-2" id="badge-color">1:00pm</span>
+          </div>
+          <p class="mb-1">Ecma Scriptnstuff</p>
+        </li>
+        <li class="list-group-item">
+          <div class="d-flex justify-content-between">
+            <h5 class="mb-1">Getting Started With Redux</h5>
+            <span class="badge badge-pill badge-info p-2" id="badge-color">2:00pm</span>
+          </div>
+          <p class="mb-1">Robbie Redux</p>
+        </li>
+        <li class="list-group-item">
+          <div class="d-flex justify-content-between">
+            <h5 class="mb-1">What's Babel?</h5>
+            <span class="badge badge-pill badge-info p-2" id="badge-color">3:00pm</span>
+          </div>
+          <p class="mb-1">Json Babel</p>
+        </li>
+        <li class="list-group-item">
+          <div class="d-flex justify-content-between">
+            <h5 class="mb-1">Networking</h5>
+            <span class="badge badge-pill badge-info p-2" id="badge-color">4:00pm</span>
+          </div>
+          <p class="mb-1">Networking with full stack professionals</p>
+        </li>
+      </ul><!-- /schedule -->
+
+      <!-- callout button -->
+      <button type="button" class="btn btn-outline-info btn-lg d-block mx-auto my-5" data-toggle="modal" data-target="#register">Don't Miss Out, Register Now</button>
+
+   	  <!-- signup form -->
+			<hr>
+			<div class="row py-4 text-muted">
+				<div class="col-md col-xl-5">
+					<p><strong>About Fullstack Developers</strong></p>
+					<p>We connect, inspire, and guide techologists and organizations that view technology innovation as a strategic imperative.</p>
+				</div>
+			  <div class="col-md col-xl-5 ml-auto">
+          <p><strong>Stay up-to-date on Full Stack Day</strong></p>
+          <!-- Subscribe -->
+			    <div class="input-group">
+			      <input type="text" class="form-control" placeholder="Email" id="subscribeInput" required/>
+			      <span class="input-group-btn">
+			        <button class="btn btn-primary" type="button" onclick="subscribe()">Subscribe</button>
+			      </span>
+          </div><!-- /subscribe -->
+        </div>
+        </div>
+        <!-- Save the date  button -->
+        <div>
+        <a class="downloadcalendar" href="webcal://p52-calendars.icloud.com/published/2/5w1wD5-ACtSjstYNBUWGGpMaPLXI4p91-Egg8V7Bmrfhgk3FgCQnRakJ-bZrG1K0PRtEEh_bpWeyRYjrcyEBYxt2sG59wCS_H2wQbAIR9b0"><button type="button" class="btn btn-outline-info btn-lg d-block mx-auto my-5"><i class="fas fa-calendar-alt"></i> Download Event (.ics)</button></a>
+        </div>
+      </div>
+      
+
+      <hr><!-- /signup form -->
+
+      
+      <!-- footer -->
+ 			<div class="row py-3">
+				<div class="col-md-7">
+          <ul class="nav">
+            <li class="nav-item">
+              <a class="nav-link" href="#">Community</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Tracks</a>
+            </li>
+          </ul>
+				</div>
+				<div class="col-md text-md-right">
+					<small>&copy; 2018 Full Stack Day &amp; Fullstack Developers</small>
+				</div>
+			</div><!-- /footer -->
+
+    </div><!-- /.container -->
+
+    <!--=====================================
+        FORM MODAL
+       =====================================-->
+
+     <div class="modal fade" id="register" tabindex="-1" role="dialog" aria-labelledby="register form" aria-hidden="true">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header bg-info text-white">
+            <h5 class="modal-title" id="exampleModalLabel">Register for Full Stack Day</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <!-- registration form -->
+            <form>
+              <div class="alert alert-warning alert-dismissible fade show" role="alert">
+                <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                  <span aria-hidden="true">&times;</span>
+                </button>
+                <strong>Hurry!</strong> 20% Off Early bird registration ends in two days.
+              </div>
+              <h5 class="mb-4">Basic Info</h5>
+              <div class="form-group">
+                <label class="form-control-label" for="name">Name:</label>
+                <input type="text" class="form-control" id="name" required pattern="[a-zA-Z]{2,100}\s[a-zA-z]{2,100}">
+                <span class="input-valid-checkmark"/>
+              </div>
+              <div class="form-group">
+                <label class="form-control-label" for="email">Email:</label>
+                <input type="email" class="form-control" id="email" required pattern=".+@.+\.[A-Za-z][A-Za-z][A-Za-z]">
+              </div>
+              <div class="form-group">
+                <label for="role">Job Role:</label>
+                <select class="custom-select form-control" id="role">
+									<option value="full stack js developer">Full Stack JavaScript Developer</option>
+									<option value="front end developer">Front End Developer</option>
+									<option value="back end developer">Back End Developer</option>
+									<option value="designer">Designer</option>
+									<option value="student">Student</option>
+                </select>
+              </div>
+
+              <hr class="my-4">
+              <h5 class="mb-4">Which Topics Interest You Most?</h5>
+
+              <div class="form-check">
+                <label class="custom-control custom-checkbox">
+                  <input type="checkbox" class="custom-control-input">
+                  <span class="custom-control-indicator"></span>
+                  <span class="custom-control-description">JavaScript Frameworks</span>
+                </label>
+              </div>
+              <div class="form-check">
+                <label class="custom-control custom-checkbox">
+                  <input type="checkbox" class="custom-control-input">
+                  <span class="custom-control-indicator"></span>
+                  <span class="custom-control-description">JavaScript Libraries</span>
+                </label>
+              </div>
+              <div class="form-check">
+                <label class="custom-control custom-checkbox">
+                  <input type="checkbox" class="custom-control-input">
+                  <span class="custom-control-indicator"></span>
+                  <span class="custom-control-description">Node.js</span>
+                </label>
+              </div>
+              <div class="form-check">
+                <label class="custom-control custom-checkbox">
+                  <input type="checkbox" class="custom-control-input">
+                  <span class="custom-control-indicator"></span>
+                  <span class="custom-control-description">Build Tools</span>
+                </label>
+              </div>
+              <div class="form-check">
+                <label class="custom-control custom-checkbox">
+                  <input type="checkbox" class="custom-control-input">
+                  <span class="custom-control-indicator"></span>
+                  <span class="custom-control-description">ES2015</span>
+                </label>
+              </div>
+
+              <hr class="mb-4">
+              <h5 class="mb-4">Payment Information</h5>
+              <h6 class="mb-4">Ticket Price: $50</h6>
+
+              <div class="form-row">
+                <div class="col-lg-6 form-group" id="cardNumberField">
+                  <label for="cc-num">Card Number:</label>
+                  <input class="form-control" id="cc-num" type="text" required>
+                </div>
+
+                <div class="col-lg form-group">
+                  <label for="zip">Zip Code:</label>
+                  <input class="form-control" id="zip" type="text" required pattern="^\d{5}(-\d{4})?$">
+                </div>
+
+                <div class="col-lg form-group">
+                  <label for="cvv">CVV:</label>
+                  <input class="form-control" id="cvv" type="text" required pattern="^[0-9]{3,4}$">
+                </div>
+              </div>
+
+              <div class="form-row">
+                <label class="col-lg-12">Expiration Date:</label>
+
+                <div class="form-group col-lg-8">
+                  <select class="custom-select form-control" id="exp-month">
+                    <option value="1">1 - January</option>
+                    <option value="2">2 - February</option>
+                    <option value="3">3 - March</option>
+                    <option value="4">4 - April</option>
+                    <option value="5">5 - May</option>
+                    <option value="6">6 - June</option>
+                    <option value="7">7 - July</option>
+                    <option value="8">8 - August</option>
+                    <option value="9">9 - September</option>
+                    <option value="10">10 - October</option>
+                    <option value="11">11 - November</option>
+                    <option value="12">12 - December</option>
+                  </select>
+                </div>
+
+                <div class="form-group col-lg">
+                  <select class="custom-select form-control" id="exp-year">
+                   
+                  </select>
+                </div>
+                <!-- Credit Card Images -->
+                <div class="form-group" id="credit_cards">
+                  <img src="img/visa.jpg" id="visa">
+                  <img src="img/mastercard.jpg" id="mastercard">
+                  <img src="img/amex.jpg" id="amex">
+                </div>
+                <!-- /Credit Card Images -->
+              </div>
+
+              <hr class="mb-4">
+              <button type="submit" class="btn btn-primary btn-lg" onclick="register()" id="registerBtn">Register</button>
+            </form><!-- /registration form -->
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js" integrity="sha384-b/U6ypiBEHpOf/4+1nzFpr53nxSS+GLCkfwBdFNTxtclqqenISfwAzpKaMNFNmj4" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js" integrity="sha384-h0AbiXch4ZDo7tp9hKZ4TsHbi047NrKGLO3SEJAg45jXxnGIfYzk4Si90RDIqNm1" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+  </body>
+</html>

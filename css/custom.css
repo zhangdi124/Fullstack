@@ -1,0 +1,32 @@
+
+.navbar .navbar-brand {
+  color: rgba(255, 255, 255, 0.85);
+  font-size: 1rem;
+}
+
+.jumbotron {
+  background-image: url('https://images.unsplash.com/photo-1415025148099-17fe74102b28?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=1d2697309ae275b27d03270feb9d73e6&auto=format&fit=crop&w=840&q=80');
+  background-size: cover;
+  text-shadow: 0px 4px 3px rgba(0,0,0,0.4), 0px 8px 13px rgba(0,0,0,0.1), 0px 18px 23px rgba(0,0,0,0.1);
+}
+
+.downloadcalendar:hover{
+  text-decoration: none;
+}
+.downloadcalendar{
+  text-decoration: none;
+}
+
+#register input.visited:invalid{
+  border: 1px solid red;
+  box-shadow: 1px 1px 2px #F00;
+}
+#register input:invalid + .input-valid-checkmark{
+  display: none;
+}
+.input-valid-checkmark:before{
+  /* content:'YAY!!!'; */
+  width:32px;
+  height: 32px;
+}
+
