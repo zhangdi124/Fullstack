@@ -30,37 +30,17 @@ function subscribe(){
     }
 }
 
-
- //register button in Register Modal 
- function register(){
-     let value = document.getElementById("#cc-num");
-     if(isCreditCardNum(value)){
-        swal("Congrats!", " You have registered Full Stack Day!", "success");
-     }else{
-        swal ( "Oops" ,  "You have to enter a valid credit card number!" ,  "error" );
-     }
-
- }
-
  function isEmailAddress(s){
     return s.search(/.+@.+\.[A-Za-z][A-Za-z][A-Za-z]/) >= 0;
  }
 
- function isCreditCardNum(){
-    let creditCardNum = document.getElementById('cc-num').value.trim();
-    let visaRegEx = /^(?:4[0-9]{12}(?:[0-9]{3})?)$/;
-    let mastercardRegEx = /^(?:5[1-5][0-9]{14})$/;
-    let amexpRegEx = /^(?:3[47][0-9]{13})$/;
-    let isValid = false;
-
-    if(visaRegEx.test(creditCardNum)){
-        isValid = true;
-    }else if (mastercardRegEx.test(creditCardNum)){
-        isValid = true;
-    }else if(amexpRegEx.test(creditCardNum)){
-        isValid = true;
+ //register button in Register Modal 
+ function register(){
+    if(Array.prototype.every.call(document.querySelectorAll('#register input'), input => input.validity.valid)){
+       swal("Congrats!", " You have registered Full Stack Day!", "success");
+    }else{
+       swal ( "Oops" ,  "Please fill in required fields!" ,  "error" );
     }
- }
 
-
+}
 
