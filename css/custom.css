@@ -10,6 +10,7 @@
   text-shadow: 0px 4px 3px rgba(0,0,0,0.4), 0px 8px 13px rgba(0,0,0,0.1), 0px 18px 23px rgba(0,0,0,0.1);
 }
 
+
 .downloadcalendar:hover{
   text-decoration: none;
 }
@@ -29,4 +30,43 @@
   width:32px;
   height: 32px;
 }
+/* 
+*{
+  margin: 0;
+  padding: 0;
+  border: 0;
+} */
+
+.card_wrap{
+  position: relative;
+
+}
+
+
+.card-text{
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgba(36, 62, 206, 0.6);
+  color: #fff;
+  visibility: hidden;
+  opacity: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: opacity .2s, visibility .2s;
+}
+
+.card_wrap:hover .card-text{
+  /* transform: translateY(0); */
+  visibility: visible;
+  opacity: 1;
+}
+
+#links{
+  width:100%;
+}
+
 
